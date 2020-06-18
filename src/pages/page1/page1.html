@@ -1,0 +1,89 @@
+<!--
+  Generated template for the Page1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title><i>Signup</i> <ion-icon name="people"></ion-icon></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="bcd">
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input [(ngModel)]="username" type="text" value=""></ion-input>
+      <ion-avatar item-start>
+        <img src="data:image/png;base64,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">
+      </ion-avatar>
+   </ion-item>
+   <br>
+
+   <ion-item>
+      <ion-label floating>Firstname</ion-label>
+      <ion-input [(ngModel)]="firstname" type="text" value=""></ion-input>
+      <ion-avatar item-start>
+        <img src="https://image.flaticon.com/icons/png/512/44/44948.png">
+      </ion-avatar>
+   </ion-item>
+   <br>
+
+   <ion-item>
+      <ion-label floating>Lastname</ion-label>
+      <ion-input [(ngModel)]="lastname" type="text" value=""></ion-input>
+      <ion-avatar item-start>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUETgTeVnsmogFTCXYbVhVcPGDa6hqSh9jcnsUsF61VC7pmLL-">
+      </ion-avatar>
+   </ion-item>
+   <br>
+   <ion-item>
+      <ion-label floating></ion-label>
+      <ion-input [(ngModel)]="DOB" type="date" value=""></ion-input>
+      <ion-avatar item-start>
+        <img src="https://cdn4.iconfinder.com/data/icons/flat-rounded-seo-icons/80/time-planning-512.png">
+      </ion-avatar>
+   </ion-item>
+   <br>
+
+   <ion-item>
+      <ion-label floating>Phoneno</ion-label>
+      <ion-input [(ngModel)]="phoneno" type="number" value=""></ion-input>
+      <ion-avatar item-start>
+        <img src="https://images-eu.ssl-images-amazon.com/images/I/51dL93S76bL.png">
+      </ion-avatar>
+   </ion-item>
+   <br>
+
+   <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input [(ngModel)]="email" type="email" value=""></ion-input>
+      <ion-avatar item-start>
+        <img src="https://ehs.utoronto.ca/wp-content/uploads/2017/11/email-us.png">
+      </ion-avatar>
+   </ion-item>
+   <br>
+
+   <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input [(ngModel)]="password" type="password" value=""></ion-input>
+      <ion-avatar item-start>
+        <img src="https://static.wixstatic.com/media/fee975_61390ad36d6f42deb33c75a9224c7253~mv2.gif">
+      </ion-avatar>
+   </ion-item>
+   <br>
+
+   <ion-item>
+      <ion-label floating> Confirm_Password</ion-label>
+      <ion-input [(ngModel)]="password2" type="password" value=""></ion-input>
+      <ion-avatar item-start>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCjbF2xjePxAwicZ0yxt9ctQmItlpT8Hvtl4SPqh7f5jsQjlFs">
+      </ion-avatar>
+   </ion-item>
+   
+   <button ion-button full round (click)="submit()">signup</button>
+
+
+  </ion-list>
+</ion-content>
+
